@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,38 +26,60 @@ namespace DigitalRubyShared
         }
         private void Update()
         {
-            
+
 
         }
         // Update is called once per frame
         void FixedUpdate()
         {
             touch = Input.GetTouch(0);
-            switch (touch.phase)
+            if (isDribling)
             {
-                case UnityEngine.TouchPhase.Stationary:
-                    break;
-                case UnityEngine.TouchPhase.Moved:
-                    if (isDribling)
-                    {
-                        ImageGestureImage match = ImageScript.CheckForImageMatch();
-                        if(match != null)
+                switch (touch.phase)
+                {
+                    case UnityEngine.TouchPhase.Stationary:
+                        break;
+                    case UnityEngine.TouchPhase.Moved:
+                        if (isDribling)
                         {
-                            switch (match.Name)
+                            ImageGestureImage match = ImageScript.CheckForImageMatch();
+                            if (match != null)
                             {
-                                case "ZigZag":
-                                    Debug.Log(match.Name);
-                                    break;
-                                case "HorizontalLine":
-                                    Debug.Log(match.Name);
-                                    break;
-                                case "VerticalLine":
-                                    Debug.Log(match.Name);
-                                    break;
+                                switch (match.Name)
+                                {
+                                    case "ZigZag":
+                                        Debug.Log(match.Name);
+                                        break;
+                                    case "HorizontalLine":
+                                        Debug.Log(match.Name);
+                                        break;
+                                    case "VerticalLine":
+                                        Debug.Log(match.Name);
+                                        break;
+                                }
                             }
                         }
+                        break;
+                }
+                if (touch.tapCount == 0 && Input.GetMouseButtonDown(0))
+                {
+                    ImageGestureImage match = ImageScript.CheckForImageMatch();
+                    if (match != null)
+                    {
+                        switch (match.Name)
+                        {
+                            case "ZigZag":
+                                Debug.Log(match.Name);
+                                break;
+                            case "HorizontalLine":
+                                Debug.Log(match.Name);
+                                break;
+                            case "VerticalLine":
+                                Debug.Log(match.Name);
+                                break;
+                        }
                     }
-                    break;
+                }
             }
         }
 

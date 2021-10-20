@@ -32,6 +32,7 @@ public class EnemyController : MonoBehaviour {
     }
     private void Update()
     {
+        
         if (enemyStamina <= 0)
         {
             currentState = enemyState.DYING;

@@ -2,8 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraFollow
-    - DribleController
+    - DigitalRubyShared.DemoAsteroidScript
+    - DigitalRubyShared.DemoScriptImage
+    - DigitalRubyShared.DribleController
+    - DigitalRubyShared.FingersExampleCoRoutineScript
+    - DigitalRubyShared.FingersImageGestureHelperComponentScript
+    - DigitalRubyShared.FingersPanRotateScaleComponentScript
+    - DigitalRubyShared.FingersScript
     - EnemyController
+    - HabilityUI
     - PlayerController
     - PlayerHealthUI
     - PlayerMovement
@@ -20,8 +27,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -29,10 +34,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -45,6 +48,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -56,7 +60,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -64,11 +74,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -77,50 +93,70 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11204}
+      Script: {instanceID: 11206}
     - Class: 114
-      Script: {instanceID: 11450}
+      Script: {instanceID: 11448}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11526}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11582}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 11624}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 11700}
     - Class: 114
-      Script: {instanceID: 12534}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 12952}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 13012}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 12312}
     - Class: 114
-      Script: {instanceID: 13572}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 13588}
+      Script: {instanceID: 12586}
     - Class: 114
-      Script: {instanceID: 13742}
+      Script: {instanceID: 12634}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 13020}
     - Class: 114
-      Script: {instanceID: 14104}
+      Script: {instanceID: 13034}
     - Class: 114
-      Script: {instanceID: 14532}
+      Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 17304}
+      Script: {instanceID: 13132}
     - Class: 114
-      Script: {instanceID: 20356}
+      Script: {instanceID: 13348}
+    - Class: 114
+      Script: {instanceID: 13540}
+    - Class: 114
+      Script: {instanceID: 13676}
+    - Class: 114
+      Script: {instanceID: 13692}
+    - Class: 114
+      Script: {instanceID: 13850}
+    - Class: 114
+      Script: {instanceID: 13950}
+    - Class: 114
+      Script: {instanceID: 13968}
+    - Class: 114
+      Script: {instanceID: 14226}
+    - Class: 114
+      Script: {instanceID: 14676}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -135,6 +171,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -169,16 +207,46 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptVirtualTouches
+  - hash:
+      serializedVersion: 2
       Hash: 482b4788a1650225af3664f1486faf28
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding.Examples
     className: ObjectPlacer
   - hash:
       serializedVersion: 2
+      Hash: cb139066af11f9d3627541b53b3e3822
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersPanARComponentScript
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 5d707291129caa8274855d2df8e3d52b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersDPadScript
+  - hash:
+      serializedVersion: 2
+      Hash: 7b98776281e644aae18f58f2e8a4f108
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptImage
+  - hash:
+      serializedVersion: 2
+      Hash: 5a0d378dac1fa92d612ab7089d2f96c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptTapAndDoubleTap
   - hash:
       serializedVersion: 2
       Hash: 9b090df60c200b46fbc3f2946cd908b1
@@ -223,6 +291,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: ea8374ac9ddba2c9ae455704a738dc22
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersScript
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -253,16 +327,40 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 80d77d6def00bb480b930a2ae8553119
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: ScaleGestureRecognizerComponentScript
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 14ebde6defc41d2aa6a691d682faf0b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 4791bc1e34944b9887b8cfa25fe45bce
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnInimigos
+  - hash:
+      serializedVersion: 2
+      Hash: 0d07c635d81bd74a20db11eb214d7c28
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersDragDropComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: f2090127f2e4c7d785d3cd185f9d64b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptPan
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -275,6 +373,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptLagTest
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -295,6 +399,24 @@ ScriptsOnlyBuild:
     className: FunnelModifier
   - hash:
       serializedVersion: 2
+      Hash: 492b57c22d070bd8b75181c66837fa2a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersRotateOrbitComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 2d94201957d3999b0afacae242dc9c93
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptDimmingView
+  - hash:
+      serializedVersion: 2
+      Hash: 92d64294de71a6fc070f1eed0aba1de4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DribleController
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -305,6 +427,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 0c046c8128d58c72931237c1892881ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersPanRotateScaleComponentScript
   - hash:
       serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
@@ -343,6 +471,12 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptComponent
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -359,6 +493,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 5e00ca80dd513c899948524178f463d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptRaycast
   - hash:
       serializedVersion: 2
       Hash: ced2b7db1a6b3956e849284099f0bce0
@@ -403,6 +543,12 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptZoomPanCamera
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -421,6 +567,18 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 51e8b0aad307ff822be3f62bad9656cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersPlatformMoveJumpComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 6a785ed24104f90faf594b3fd3a4bfed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HabilityUI
+  - hash:
+      serializedVersion: 2
       Hash: 427e4ae6223362877cde7ac01baa97c3
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding
@@ -433,10 +591,28 @@ ScriptsOnlyBuild:
     className: AstarPath
   - hash:
       serializedVersion: 2
+      Hash: 51ec56a2d7265a776cc5ce87b7c10400
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersImageAutomationScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneController
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScript3DOrbit
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -445,10 +621,34 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 6d4244ac40e9e112560002e3911da667
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersZoomPanCameraComponentScript
+  - hash:
+      serializedVersion: 2
       Hash: 4ff6c57167b87fc7d8911a73d4384273
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 80d77d6def00bb480b930a2ae8553119
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: OneTouchScaleGestureRecognizerComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 342c875df4b61b5953270a5e44c1d678
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptMoveFire
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersExampleCoRoutineScript
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -457,10 +657,34 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 72509a04f8fac2e648d3332e80d719f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersWordGameExampleScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersExampleOptionsScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkinEntity
+  - hash:
+      serializedVersion: 2
+      Hash: bfa7d945c0ef9cd4e49b8e3ed9e89a48
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersPanOrbitComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 3df88d175268469679d145582fc178bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptDPad
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -475,6 +699,18 @@ ScriptsOnlyBuild:
     className: AstarSmoothFollow2
   - hash:
       serializedVersion: 2
+      Hash: 7c3518a610efed82c9ec728726900e68
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersThirdPersonControllerScript
+  - hash:
+      serializedVersion: 2
+      Hash: beb5c9e71bb36330ccd58e9d554ad012
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptZoomableScrollView
+  - hash:
+      serializedVersion: 2
       Hash: 0cceca996e1eb1401d74a841f34c4f83
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding
@@ -487,10 +723,22 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 926eae79864c1af40b8df2ae01ba7633
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptPlatformSpecificView
+  - hash:
+      serializedVersion: 2
       Hash: 43acdecfcc62de1110964c47067c846f
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding
     className: AlternativePath
+  - hash:
+      serializedVersion: 2
+      Hash: 72bc2f8c0a73283c0e46785eeac9d6b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersImageGestureHelperComponentScript
   - hash:
       serializedVersion: 2
       Hash: 3dd5460199f4f71ddeb16f492607b8fb
@@ -517,10 +765,46 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 6d2757136a37d7a2601ae643fee4340f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: SwipeGestureRecognizerComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: ea2707ff3613573b979d6ec01d9f4a36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersOneTouchScaleAxisComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 0bf5a2a912e495ef619087d9b10e07d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: LongPressGestureRecognizerComponentScript
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: f3e13578d5c70baf9b259ad97f59152f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: RotateGestureRecognizerComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: 588cb15fe4acc490d4a7762de3bd2bc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptMultiDrag
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoAsteroidScript
   - hash:
       serializedVersion: 2
       Hash: e7af7273c8177a5779551d022b323d84
@@ -545,6 +829,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 53b1fb7b930315b004603b1d3a31fa5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersJoystickAnywhereComponentScript
   - hash:
       serializedVersion: 2
       Hash: 424c99376ea3422d85441e7a4c2141fb
@@ -595,16 +885,28 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: c218c039ab690ffc5473edd7ef5434e2
+      Hash: 6f03abf597772ee35ef6dbee5ee09a25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 5a6f3a9e4b3817773d59480def2c6b59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: ImageGestureRecognizerComponentScript
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 7ff25744397714832da4758b82e11a56
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: TapGestureRecognizerComponentScript
   - hash:
       serializedVersion: 2
       Hash: 06f1fef4248fdeeba8b70e6f333628ae
@@ -623,6 +925,12 @@ ScriptsOnlyBuild:
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding.Examples
     className: MineBotAI
+  - hash:
+      serializedVersion: 2
+      Hash: c425d32d2387dd90bbb198d73929d70d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersExampleMainMenuScript
   - hash:
       serializedVersion: 2
       Hash: 8abe5c5970b933d28c84fe29c2232578
@@ -691,6 +999,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 0a0fd2f526cc3ac5c7e15608d2fff33f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersJoystickScript
+  - hash:
+      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -703,13 +1017,37 @@ ScriptsOnlyBuild:
     className: BlockManager
   - hash:
       serializedVersion: 2
+      Hash: 3bb1b4bae6823a4524e793cdb8702970
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptMultiFingerTap
+  - hash:
+      serializedVersion: 2
       Hash: 427e4ae6223362877cde7ac01baa97c3
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding
     className: NodeLink3
   - hash:
       serializedVersion: 2
-      Hash: 1059a3bacaf36e60c37bb46d6d58d4cb
+      Hash: 87d832c71026afaa6b8f46c7cf030915
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptOneFinger
+  - hash:
+      serializedVersion: 2
+      Hash: e69ffea4b3857e119cfabada49403dce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptDragSwipe
+  - hash:
+      serializedVersion: 2
+      Hash: 228901c5e5112b85c88e54c84b918d2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScript
+  - hash:
+      serializedVersion: 2
+      Hash: b36098a3d273f270d27475e722056376
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -721,10 +1059,22 @@ ScriptsOnlyBuild:
     className: ProceduralWorld
   - hash:
       serializedVersion: 2
+      Hash: 65ff34e65d2270a4840e91a8ea72864d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptDynamicGrid
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f3e13578d5c70baf9b259ad97f59152f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: OneTouchRotateGestureRecognizerComponentScript
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -763,10 +1113,28 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: a073aec74209212a9f816bc8dfafe63d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptSwipe
+  - hash:
+      serializedVersion: 2
+      Hash: b6e8c25495fb40a3c873dfb5d38b698d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersScrollViewComponentScript
+  - hash:
+      serializedVersion: 2
       Hash: c0e31dd31c35455f422978da26bb908a
     assemblyName: AstarPathfindingProject.dll
     namespaceName: Pathfinding
     className: Patrol
+  - hash:
+      serializedVersion: 2
+      Hash: 0353c0abd6b4ae7e981f532c9ac3ab10
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersMultiDragComponentScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -805,6 +1173,18 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: 959232f4a0b101b127353c55f2c7e1d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersCameraMove3DComponentScript
+  - hash:
+      serializedVersion: 2
+      Hash: db1b12fddedc25cb54efe96955c37f55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersRotateCameraComponentScript
+  - hash:
+      serializedVersion: 2
       Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -815,6 +1195,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: e0648e1cc87a0451d19d9206de131dd1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: PanGestureRecognizerComponentScript
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -841,29 +1227,29 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: c165795df10d8c8b82d3af897fe0ff09
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: FingersFirstPersonControllerScript
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 5cdc289c487191f944b1e6982fae32df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DigitalRubyShared
+    className: DemoScriptPlaceObjects
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 9193499107b95380b911ad5f1b167ffe
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DribleController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneController
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/DELL/Desktop/dibrinho0.1.apk
+  playerPath: D:/Dibrinho/Dibrinho/New Unity Project/Build/Dibrinho.apk
