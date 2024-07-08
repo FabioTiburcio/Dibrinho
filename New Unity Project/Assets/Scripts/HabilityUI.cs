@@ -15,12 +15,6 @@ public class HabilityUI : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
         habilityImage = GetComponent<Image>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void Fade()
     {
         habilityImage.color = new Color(255, 0, 0);
